@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# MapBynry - Profile Management and Geolocation Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+MapBynry is a practice project designed to demonstrate fundamental web development skills, focusing on client-side data management and geolocation visualization. This web application allows users to:
 
-In the project directory, you can run:
+* **Create, Edit, and Delete Profiles:** Manage user profiles with detailed information.
+* **Visualize Locations on a Map:** Display profile locations using latitude and longitude coordinates.
+* **Update Geolocation:** Modify the latitude and longitude associated with a profile.
+* **Search and Filter:** Efficiently locate profiles by name or location.
 
-### `npm start`
+**Note:** Due to the absence of a persistent database (e.g., PostgreSQL), profile data and updates are stored in browser cookies. Refreshing the page will reset the application to its default state.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Profile Management:**
+    * Intuitive interface for adding new profiles.
+    * Ability to edit existing profile details.
+    * Functionality to delete profiles.
+* **Geolocation Integration:**
+    * Display of profile locations on an interactive map.
+    * Real-time update of latitude and longitude coordinates.
+* **Search and Filtering:**
+    * Search profiles by name.
+    * Filter profiles by location.
+* **Client-Side Data Storage:**
+    * Utilizes browser cookies for temporary data persistence.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **HTML:** For structuring the web page.
+* **CSS:** For styling and layout.
+* **JavaScript:** For application logic, data manipulation, and map integration.
+* **Mapping Library:** (Specify the mapping library used, e.g., Leaflet, Google Maps API)
 
-### `npm run build`
+## Setup and Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  open vs code start terminal write npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Limitations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Temporary Data Storage:** Profile data is stored in browser cookies, resulting in data loss upon page refresh.
+* **No Server-Side Persistence:** The application lacks a backend database, limiting its scalability and data persistence.
+* **Mapping Library Details:** Please add the mapping library that was used, like leaflet or google maps api.
 
-### `npm run eject`
+## Future Enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Database Integration:** Implement a server-side database (e.g., PostgreSQL, MongoDB) for persistent data storage.
+* **User Authentication:** Add user authentication and authorization for secure profile management.
+* **Improved User Interface:** Enhance the UI/UX for a more intuitive and user-friendly experience.
+* **Advanced Mapping Features:** Incorporate advanced mapping features, such as custom markers, overlays, and geocoding.
+* **Server Side validation**: Add server side validation to improve data security.
